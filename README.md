@@ -47,8 +47,3 @@ Contributions are welcome! Please feel free to open issues, propose features, or
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for more details.
-
-## Let's get started!
-This README.md provides a solid starting point for your WorkMode Flutter app. Use this as a foundation for further development and documentation. Remember to add more detailed information about specific features, implementation details, and any other relevant information.
-
-**Happy coding!** 

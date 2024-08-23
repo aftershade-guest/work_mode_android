@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="other">Other</string>
+    <string name="please_make_sure_you_can_receive_text_messages_before_clicking_next">Please make sure you can receive text messages before clicking next.</string>
+    <string name="current_info_txt">Please enter your current login information</string>
+</resources>

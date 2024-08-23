@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_nav"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.aftershade.workmode.Common.LoginSignUp.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.aftershade.workmode.Common.LoginSignUp.SignupFragment"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup" >
+        <action
+            android:id="@+id/action_signupFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_signupFragment_to_signUp2ndFragment"
+            app:destination="@id/signUp2ndFragment" />
+        <action
+            android:id="@+id/action_signupFragment_to_signUp3rdFragment"
+            app:destination="@id/signUp3rdFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUp2ndFragment"
+        android:name="com.aftershade.workmode.Common.LoginSignUp.SignUp2ndFragment"
+        android:label="fragment_sign_up2nd"
+        tools:layout="@layout/fragment_sign_up2nd" >
+        <action
+            android:id="@+id/action_signUp2ndFragment_to_signUp3rdFragment"
+            app:destination="@id/signUp3rdFragment" />
+        <action
+            android:id="@+id/action_signUp2ndFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUp3rdFragment"
+        android:name="com.aftershade.workmode.Common.LoginSignUp.SignUp3rdFragment"
+        android:label="fragment_sign_up3rd"
+        tools:layout="@layout/fragment_sign_up3rd" >
+        <action
+            android:id="@+id/action_signUp3rdFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_signUp3rdFragment_to_verifyOTPFragment"
+            app:destination="@id/verifyOTPFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/verifyOTPFragment"
+        android:name="com.aftershade.workmode.Common.LoginSignUp.VerifyOTPFragment"
+        android:label="fragment_verify_o_t_p"
+        tools:layout="@layout/fragment_verify_o_t_p" />
+</navigation>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_color"
+    android:padding="20dp"
+    tools:context=".Common.OnBoarding.OnBoardingFragment">
+
+    <Button
+        android:id="@+id/skipBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/skip"
+        android:padding="10dp"
+        android:layout_alignParentEnd="true"
+        android:background="#00000000"
+        android:drawableEnd="@drawable/skip_icon"
+        app:tint="@color/black"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/slider_onboarding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/get_started_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lets_get_started"
+            android:background="@drawable/login_bg_btn"
+            android:visibility="invisible"
+            android:elevation="15dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="20dp"
+            android:orientation="horizontal"/>
+
+        <ImageView
+            android:id="@+id/on_boarding_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/next_icon"
+            android:padding="20dp"
+            app:tint="@color/black"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

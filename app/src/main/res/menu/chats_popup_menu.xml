@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/chats_menu_camera"
+        android:title="Camera"
+        android:icon="@drawable/photo_camera_icon"/>
+
+    <item
+        android:id="@+id/chats_menu_image"
+        android:title="Images"
+        android:icon="@drawable/photo_library_icon"/>
+
+    <item
+        android:id="@+id/chats_menu_audio"
+        android:title="Audio"
+        android:icon="@drawable/headset_icon"/>
+
+    <item
+        android:id="@+id/chats_menu_file"
+        android:title="File"
+        android:icon="@drawable/drive_file_icon"/>
+
+
+</menu>

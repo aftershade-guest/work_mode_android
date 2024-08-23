@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentPadding="15dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="20dp"
+    android:elevation="0dp"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="@color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/all_post_image_card_view"
+            android:layout_width="120dp"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignBottom="@id/program_content_layout"
+            android:elevation="0dp"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:id="@+id/main_photo_program_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fitness"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@+id/favorite_btn_program_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/favorite_icon"
+                android:tint="@color/pink"
+                android:padding="2dp"
+                android:layout_gravity="end"
+                android:layout_centerVertical="true"
+                android:background="@color/btnpressed"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true" />
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/program_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/all_post_image_card_view"
+            android:layout_marginStart="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/program_name_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:ellipsize="end"
+                    android:layout_marginEnd="10dp"
+                    android:text="WWWWWWWWWWW"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="24sp" />
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RatingBar
+                    android:id="@+id/program_rating_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:progressTint="@color/pink"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerVertical="true"
+                    android:rating="0" />
+
+                <TextView
+                    android:id="@+id/skill_level_program_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/program_rating_card"
+                    android:maxLines="1"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:text="Intermediate"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/muli_bold" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/program_description_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:layout_marginTop="10dp"
+                android:text="WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW"
+                android:ellipsize="end" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/duration_span_program_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textSize="30sp"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/black"
+                    android:layout_alignParentBottom="true"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/duration_span_text_program_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="weeks"
+                    android:layout_toEndOf="@id/duration_span_program_card"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:includeFontPadding="false"
+                    android:textStyle="normal"
+                    android:layout_marginStart="5dp"
+                    android:layout_alignBottom="@id/duration_span_program_card" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

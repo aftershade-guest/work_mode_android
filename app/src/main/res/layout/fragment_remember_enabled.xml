@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".users.settings.Security.RememberEnabledFragment"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/save_login_info_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/save_info_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save_login_information"
+            android:textSize="16sp"
+
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:fontFamily="@font/muli"
+            />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/remember_me_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_login_desc"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/save_login_tip_icon"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:src="@drawable/info_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/save_login_tip_icon"
+            android:layout_marginStart="5dp"
+            android:layout_centerVertical="true"
+            android:text="@string/save_login_tip"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

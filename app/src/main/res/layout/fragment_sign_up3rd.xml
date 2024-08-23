@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient_fill_one"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".Common.LoginSignUp.SignUp3rdFragment">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center" />
+
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/signup_code_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ccp_autoDetectCountry="true"
+        app:ccpDialog_textColor="@color/white"
+        app:ccp_contentColor="@color/white"
+        app:ccpDialog_backgroundColor="@color/transparent"
+        app:ccp_showFlag="true"
+        app:ccp_showFullName="true"
+        app:ccp_showNameCode="true"
+        android:padding="5dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone"
+        app:hintTextColor="@color/white"
+        android:textColorHint="@color/white"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:boxStrokeColor="@color/white"
+        app:boxStrokeWidthFocused="2dp"
+        app:boxBackgroundMode="outline"
+        app:startIconDrawable="@drawable/phone_icon"
+        app:startIconTint="@color/white"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/signup_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:inputType="number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signup_next_btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:elevation="8dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_bg_btn"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/signup_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="@string/cancel_registration"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:id="@+id/signUp3rd_tip"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/info_icon"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/please_make_sure_you_can_receive_text_messages_before_clicking_next"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/signUp3rd_tip" />
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/transparent"
+    app:cardElevation="0dp"
+    app:contentPadding="10dp">
+
+    <com.google.android.gms.ads.nativead.NativeAdView
+        android:id="@+id/trainer_native_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/trainer_ad_app_icon"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toEndOf="@id/trainer_ad_app_icon"
+                android:layout_marginStart="10dp">
+
+                <TextView
+                    android:id="@+id/trainer_ad_headline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ad Headline"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/muli_bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="2dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:background="@drawable/ad_text_stroke"
+                        android:paddingHorizontal="8dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="Ad"
+                        android:textColor="#30000C" />
+
+                    <TextView
+                        android:id="@+id/trainer_ad_advertiser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Advertiser"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/muli" />
+
+                </LinearLayout>
+
+                <RatingBar
+                    android:id="@+id/trainer_ad_stars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:progressTint="@color/pink"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/trainers_ad_call_to_action"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="@color/trans_pink"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+
+                android:paddingHorizontal="10dp"
+                android:textColor="#30000C"
+                />
+
+        </RelativeLayout>
+
+    </com.google.android.gms.ads.nativead.NativeAdView>
+
+</androidx.cardview.widget.CardView>

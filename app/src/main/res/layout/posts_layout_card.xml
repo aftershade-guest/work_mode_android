@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#0DA32948"
+    android:layout_marginBottom="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/post_profile_pic_card"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_placeholder_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="7dp"
+            android:layout_toStartOf="@id/post_options_btn_card"
+            android:layout_toEndOf="@id/post_profile_pic_card"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/post_user_name_text_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/muli_black"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="Sam Munyu"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/post_trainer_type_text_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="Yoga Instructor" />
+
+            <RatingBar
+                android:id="@+id/post_trainer_rating_card"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:progressTint="@color/pink" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/post_options_btn_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/transparent"
+            android:padding="10dp"
+            android:src="@drawable/options_icon"
+            android:tint="@color/black" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/all_post_image_card"
+        android:layout_width="match_parent"
+        android:layout_height="400dp" />
+
+    <RelativeLayout
+        android:id="@+id/caption_info_post_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/post_user_name_bottom_text_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="120dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/muli_black"
+            android:maxLines="1"
+            android:text="Sam Munyu"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/post_caption_text_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:textSize="16sp"
+            android:layout_marginStart="5dp"
+            android:layout_alignBottom="@id/post_user_name_bottom_text_card"
+            android:layout_toEndOf="@id/post_user_name_bottom_text_card"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:text="I am in shape... Yas maan" />
+
+        <TextView
+            android:id="@+id/post_date_text_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/post_user_name_bottom_text_card"
+            android:text="2 May" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="6dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/course_popular_image_card_view_layout"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="15dp">
+
+        <ImageView
+            android:id="@+id/course_popular_image_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/image_placeholder_icon"
+            android:scaleType="centerCrop" />
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/course_popular_image_card_view_layout"
+        android:layout_marginBottom="5dp"
+        android:paddingHorizontal="3dp"
+        android:layout_marginEnd="5dp"
+        android:elevation="12dp"
+        android:layout_alignEnd="@id/course_popular_image_card_view_layout"
+        android:background="@drawable/white_radius_bg">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tint="@color/lighter_light_pink"
+            android:layout_marginEnd="3dp"
+            android:src="@drawable/ic_baseline_star_24" />
+
+        <TextView
+            android:id="@+id/course_rating_popular_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:text="0" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/course_name_popular_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course Name"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/course_popular_image_card_view_layout"
+        android:textSize="14sp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/course_skill_level_popular_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skill Level"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/course_name_popular_card"
+        android:textSize="12sp" />
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".users.ImageViewActivity"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/image_activity_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/close_icon"
+        android:background="@color/btnpressed"
+        android:tint="@color/black"
+        android:layout_gravity="end"
+        android:padding="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/image_view_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fitness"
+        android:scaleType="centerInside"/>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<resources>
+
+    <string-array name="repeat_event">
+
+    </string-array>
+
+    <string-array name="mute_chat">
+
+        <item>15 Minutes</item>
+        <item>30 Minutes</item>
+        <item>1 Hour</item>
+        <item>12 Hours</item>
+        <item>24 Hours</item>
+        <item>Indefinitely</item>
+
+    </string-array>
+
+    <string-array name="wokout_categories">
+
+        <item>@string/aerobics</item>
+        <item>@string/anaerobic_training</item>
+        <item>@string/calisthenics</item>
+        <item>@string/circuit_training</item>
+        <!--<item>@string/exercises</item>
+        <item>@string/functional_training</item>-->
+        <item>@string/strength_training</item>
+        <item>@string/yoga</item>
+
+    </string-array>
+
+</resources>

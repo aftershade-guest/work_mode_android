@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".users.settings.Security.SecurityFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="@color/black"
+        android:dividerPadding="5dp"
+        android:orientation="vertical"
+        android:showDividers="none">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:padding="20dp"
+            android:textSize="18sp"
+            android:text="Login"
+            android:textColor="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/password_layout_security"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:background="@color/btnpressed">
+
+            <ImageView
+                android:id="@+id/password_security"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/lock_icon"
+                app:tint="@color/black" />
+
+            <TextView
+                android:id="@+id/account_setting_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/password_security"
+                android:fontFamily="@font/muli"
+                android:layout_marginStart="10dp"
+                android:text="Password"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/remember_layout_security"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:background="@color/btnpressed">
+
+            <ImageView
+                android:id="@+id/remember_me_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/account_icon"
+                app:tint="@color/black" />
+
+            <TextView
+                android:id="@+id/remember_me_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/remember_me_icon"
+                android:fontFamily="@font/muli"
+                android:layout_marginStart="10dp"
+                android:text="Remember Me"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/two_factor_auth_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:background="@color/btnpressed">
+
+            <ImageView
+                android:id="@+id/two_factor_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/account_icon"
+                app:tint="@color/black" />
+
+            <TextView
+                android:id="@+id/two_factor_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/two_factor_icon"
+                android:fontFamily="@font/muli"
+                android:layout_marginStart="10dp"
+                android:text="Two-Factor Authentication"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:padding="20dp"
+            android:text="Data"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/access_data_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:background="@color/btnpressed">
+
+            <ImageView
+                android:id="@+id/access_data_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/bar_icon"
+                app:tint="@color/black" />
+
+            <TextView
+                android:id="@+id/access_data_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/access_data_icon"
+                android:fontFamily="@font/muli"
+                android:layout_marginStart="10dp"
+                android:text="Access Data"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/download_data_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:background="@color/btnpressed">
+
+            <ImageView
+                android:id="@+id/download_data_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/save_icon"
+                app:tint="@color/black" />
+
+            <TextView
+                android:id="@+id/download_data_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/download_data_icon"
+                android:fontFamily="@font/muli"
+                android:layout_marginStart="10dp"
+                android:text="Download Data"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

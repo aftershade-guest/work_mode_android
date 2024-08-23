@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="140dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="5dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/stroke_design_gradient">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="135dp"
+            android:layout_height="145dp"
+            android:layout_centerInParent="true"
+            app:cardCornerRadius="15dp">
+
+            <ImageView
+                android:id="@+id/recommended_programs_image_"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_height="match_parent" />
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingVertical="7dp"
+        android:paddingHorizontal="3dp">
+
+        <TextView
+            android:id="@+id/recommended_programs_course_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="Course Name"
+            android:textColor="@color/black" />
+
+        <RatingBar
+            android:id="@+id/recommended_programs_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:numStars="5"
+            android:progressTint="@color/pink" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

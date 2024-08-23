@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".users.settings.Account.DeleteFragment"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/warning_icon_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_warning_24"
+        app:tint="@android:color/holo_red_dark"/>
+
+    <TextView
+        android:id="@+id/warning_text_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You are about to permanently delete your account."
+        android:layout_toEndOf="@id/warning_icon_delete"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        />
+
+    <Button
+        android:id="@+id/delete_acc_frag_next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/warning_text_delete"
+        android:text="@string/next"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:background="@drawable/button_design_two_pressed"/>
+
+</RelativeLayout>

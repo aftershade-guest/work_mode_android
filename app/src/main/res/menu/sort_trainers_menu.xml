@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Sort by:"
+        android:enabled="false" />
+
+    <item android:title="Name">
+
+        <menu>
+
+            <item
+                android:id="@+id/sort_trainer_a_to_z"
+                android:title="A to Z" />
+
+            <item
+                android:id="@+id/sort_trainer_z_to_a"
+                android:title="Z to A" />
+
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/sort_trainer_type"
+        android:title="Type" />
+
+    <item
+        android:title="Rating"
+        android:visible="false">
+
+        <menu>
+
+            <item
+                android:id="@+id/sort_trainer_rating_ascend"
+                android:title="Ascending" />
+
+            <item
+                android:id="@+id/sort_trainer_rating_descend"
+                android:title="Descending" />
+
+        </menu>
+
+    </item>
+
+</menu>

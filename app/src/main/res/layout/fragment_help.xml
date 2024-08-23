@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".users.settings.Help.HelpFragment"
+    android:layout_marginTop="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/black"
+        android:dividerPadding="10dp"
+        android:orientation="vertical"
+        android:showDividers="none">
+
+        <TextView
+            android:id="@+id/report_a_problem_help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli"
+            android:padding="20dp"
+            android:textSize="18sp"
+            android:background="@color/btnpressed"
+            android:text="@string/report_a_problem"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/faq_feedback_help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli"
+            android:padding="20dp"
+            android:textSize="18sp"
+            android:background="@color/btnpressed"
+            android:text="@string/faq_amp_feedback"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/privacy_and_security_help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli"
+            android:padding="20dp"
+            android:textSize="18sp"
+            android:background="@color/btnpressed"
+            android:text="@string/privacy_and_securiy_help"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+</RelativeLayout>

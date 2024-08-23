@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".users.search.SearchActivity"
+    android:background="@color/bg_color">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_color"
+        android:id="@+id/app_bar_layout_search_programs">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Get Fit"
+            app:toolbarId="@id/toolbar_search_programs"
+            app:collapsedTitleTextAppearance="@style/expandedBarTextStyle"
+            app:expandedTitleTextAppearance="@style/expandedBarTextStyle"
+            app:contentScrim="@color/white"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Find Your"
+                    android:textSize="32sp"
+                    android:visibility="visible"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="60dp"
+                    android:paddingHorizontal="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Workout Class"
+                    android:textSize="32sp"
+                    android:visibility="visible"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="20dp"
+                    android:textStyle="bold"
+                    android:paddingHorizontal="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="20dp">
+
+                    <androidx.appcompat.widget.SearchView
+                        android:id="@+id/search_search_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toStartOf="@id/search_sort_filter"
+                        android:padding="5dp"
+                        app:iconifiedByDefault="false"
+                        app:queryHint="What are you looking for?"
+                        android:background="@drawable/search_bg" />
+
+                    <ImageButton
+                        android:id="@+id/search_sort_filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/sort_icon"
+                        android:tint="@color/grey"
+                        android:background="@drawable/transluscent_pink_bg_pressed"
+                        android:padding="12dp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_search_programs"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:title="Get Fit"
+                app:layout_collapseMode="pin"
+                app:titleTextColor="@color/orange"
+                app:contentInsetStart="-12dp">
+
+                <RelativeLayout
+                    android:id="@+id/top_bar_layout_search_programs"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible">
+
+                    <ImageButton
+                        android:id="@+id/back_btn_search_programs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:background="@color/btnpressed"
+                        android:src="@drawable/back_icon"
+                        app:tint="@color/black" />
+
+                    <TextView
+                        android:id="@+id/search_title_workout_posts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_toEndOf="@id/back_btn_search_programs"
+                        android:defaultFocusHighlightEnabled="true"
+                        android:ellipsize="marquee"
+                        android:fontFamily="@font/muli_black"
+                        android:paddingVertical="7dp"
+                        android:singleLine="true"
+                        android:layout_centerVertical="true"
+                        android:text="GET_FIT"
+                        android:textColor="@color/orange"
+                        android:textSize="22sp" />
+
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/search_activity_tab_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabIndicatorColor="@color/orange"
+                app:tabSelectedTextColor="@color/orange">
+
+                <com.google.android.material.tabs.TabItem
+                    android:text="Workouts"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    />
+
+                <com.google.android.material.tabs.TabItem
+                    android:text="Trainers"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" />
+
+            </com.google.android.material.tabs.TabLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/search_programs_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:nestedScrollingEnabled="false" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

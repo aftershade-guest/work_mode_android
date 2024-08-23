@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/reset_program_recent"
+        android:title="Reset"/>
+
+    <item android:title="Sort By:" android:enabled="false"/>
+
+    <item
+        android:id="@+id/sort_program_recent"
+        android:title="Recent First"/>
+
+    <item android:title="Program Name">
+
+        <menu>
+
+            <item
+                android:id="@+id/sort_program_a_to_z"
+                android:title="A to Z"/>
+            <item
+                android:id="@+id/sort_program_z_to_a"
+                android:title="Z to A"/>
+
+        </menu>
+
+    </item>
+
+    <item android:title="Filter By:" android:enabled="false"/>
+
+    <item android:title="Skill Level">
+        <menu>
+
+            <item
+                android:id="@+id/filter_program_beginner"
+                android:title="Beginner"/>
+            <item
+                android:id="@+id/filter_program_intermediate"
+                android:title="Intermediate"/>
+            <item
+                android:id="@+id/filter_program_advanced"
+                android:title="Advanced"/>
+
+        </menu>
+    </item>
+
+    <item android:title="Program Length" android:visible="false">
+
+        <menu>
+
+            <item
+                android:id="@+id/filter_program_1_week"
+                android:title="Less than 1 weeek"/>
+            <item
+                android:id="@+id/filter_program_1_to_2_week"
+                android:title="1 to 2 weeks"/>
+            <item
+                android:id="@+id/filter_program_2_to_4_week"
+                android:title="2 to 4 weeks"/>
+            <item
+                android:id="@+id/filter_program_4_week"
+                android:title="More than 4 weeks"/>
+
+        </menu>
+
+    </item>
+
+</menu>

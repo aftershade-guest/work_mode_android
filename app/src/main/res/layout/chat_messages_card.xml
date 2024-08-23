@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/message_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:visibility="visible"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="7dp"
+        android:background="@drawable/trans_pink_bg"
+        android:layout_marginVertical="10dp"
+        android:layout_centerHorizontal="true" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/receiver_messages_relative_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/received_message_bg"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:paddingEnd="5dp"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_below="@id/message_date">
+
+        <ImageView
+            android:id="@+id/receiver_file_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/text_snippet_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/receiver_messages_text"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="gone"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/message_receiver_image_view"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginVertical="6dp"
+            android:maxWidth="250dp"
+            android:maxHeight="150dp"
+            android:scaleType="centerInside"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/receiver_messages_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="300dp"
+            android:padding="10dp"
+            android:text="Receiver Messages here"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/message_receiver_image_view" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/receive_message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:layout_toEndOf="@id/receiver_messages_relative_layout"
+        android:layout_alignBottom="@id/receiver_messages_relative_layout"
+        android:layout_marginStart="5dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sent_messages_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message_date"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:paddingStart="5dp"
+        android:layout_alignWithParentIfMissing="true"
+        android:background="@drawable/sent_message_bg">
+
+        <ImageView
+            android:id="@+id/sender_file_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/text_snippet_icon"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/sender_message_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/message_sender_image_view"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:maxWidth="250dp"
+            android:maxHeight="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginVertical="6dp"
+            android:scaleType="centerInside"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/sender_message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:maxWidth="300dp"
+            android:padding="10dp"
+            android:text="Sender Messages Here"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/message_sender_image_view" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/sender_message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:layout_toStartOf="@id/sent_messages_layout"
+        android:layout_alignBottom="@id/sent_messages_layout"
+        android:layout_marginEnd="5dp" />
+
+</RelativeLayout>

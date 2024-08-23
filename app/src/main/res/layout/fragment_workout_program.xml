@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".users.workout_posts.WorkoutProgramFragment"
+    android:background="@color/bg_color"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.bosphere.fadingedgelayout.FadingEdgeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:fel_edge="bottom"
+                app:fel_size_bottom="120dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/image_recycler_program_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="550dp" />
+
+                    <com.kingfisher.easyviewindicator.AnyViewIndicator
+                        android:id="@+id/indicator_info_program_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/image_recycler_program_info"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="20dp"
+                        app:avi_height="7dp"
+                        app:avi_width="7dp"
+                        app:avi_drawable="@drawable/avi_selected"
+                        app:avi_drawable_unselected="@drawable/avi_unselected"
+                        app:avi_animation_enable="true"
+                        app:avi_margin="10dp" />
+
+
+                </RelativeLayout>
+
+            </com.bosphere.fadingedgelayout.FadingEdgeLayout>
+
+            <LinearLayout
+                android:paddingHorizontal="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/program_info_course_name_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/course_name_program_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="30sp"
+                        android:text="Course Name"
+                        android:fontFamily="@font/muli_black"
+                        android:inputType="textCapWords"
+                        android:layout_toStartOf="@id/favourites_btn_program_info"
+                        android:textColor="@color/black"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:background="@color/transparent" />
+
+                    <ToggleButton
+                        android:id="@+id/favourites_btn_program_info"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:background="@color/btnpressed"
+                        android:textOn=""
+                        android:textOff=""
+                        android:layout_alignBottom="@id/course_name_program_info"
+                        android:tint="@color/pink"
+                        android:buttonTint="@color/pink"
+                        android:padding="15dp" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/skill_level_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Beginner"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/muli_bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatRatingBar
+                        android:id="@+id/top_overall_rating_program_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:layout_gravity="center_vertical"
+                        android:progressTint="@color/pink"
+                        style="@style/Widget.AppCompat.RatingBar.Small" />
+
+                    <TextView
+                        android:id="@+id/overall_rating_bar_text_program_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/black"
+                        android:text="0" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="10dp"
+            android:orientation="vertical"
+            android:elevation="7dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <Button
+                    android:id="@+id/workout_category_one_program_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Yoga"
+                    android:textSize="12sp"
+                    android:textAllCaps="false"
+                    android:background="@drawable/categ_small_btn_bg" />
+
+                <Button
+                    android:id="@+id/workout_category_two_program_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Calisthenics"
+                    android:layout_marginStart="10dp"
+                    android:textSize="12sp"
+                    android:textAllCaps="false"
+                    android:visibility="gone"
+                    android:background="@drawable/categ_small_btn_bg" />
+
+                <Button
+                    android:id="@+id/workout_category_three_program_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Aerobics"
+                    android:visibility="gone"
+                    android:textSize="12sp"
+                    android:layout_marginStart="10dp"
+                    android:textAllCaps="false"
+                    android:background="@drawable/categ_small_btn_bg" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hits:"
+                    android:textStyle="bold"
+                    android:textColor="@color/dark_orange" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/almostBlck"
+                    android:text="Grip strength, shoulders, quads, hams, calves" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="15dp"
+                android:clickable="false"
+                android:src="@drawable/line_" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/duration_span_text_program_info"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="2 Weeks"
+                    android:layout_marginEnd="2dp"
+                    android:padding="12dp"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/repetition_text_program_info"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="3 to 6 days"
+                    android:padding="12dp"
+                    android:layout_marginEnd="2dp"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/time_text_program_info"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="12dp"
+                    android:text="20 mins"
+                    android:textSize="18sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="15dp"
+                android:clickable="false"
+                android:src="@drawable/line_" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/description_edit_program_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:background="@color/transparent"
+                android:padding="5dp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Goal"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="7dp" />
+
+            <TextView
+                android:id="@+id/goal_edit_program_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:text="Goal"
+                android:padding="5dp"
+                android:layout_marginTop="5dp" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_layout_program_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/almostGray"
+                android:elevation="7dp"
+                app:tabIndicatorColor="@color/orange"
+                app:tabIndicatorAnimationMode="linear"
+                app:tabIndicatorFullWidth="true"
+                app:tabSelectedTextColor="@color/orange"
+                android:layout_marginTop="12dp" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_pager_program_info"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:nestedScrollingEnabled="false" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/ratings_and_reviews"
+                    android:textColor="@color/pink" />
+
+                <RelativeLayout
+                    android:id="@+id/overall_rating_layout_program_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/overall_rating_program_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="28sp"
+                        android:fontFamily="@font/muli_semibold"
+                        android:text="0" />
+
+                    <RatingBar
+                        android:id="@+id/overall_rating_bar_2nd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/overall_rating_program_info"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:progressTint="@color/pink"
+                        android:rating="0" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/reviews_layout_program_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/review_by_txt_program_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="John Doe" />
+
+                    <RatingBar
+                        android:id="@+id/user_rating_program_info"
+                        android:layout_below="@id/review_by_txt_program_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:progressTint="@color/pink"
+                        android:layout_marginTop="5dp"
+                        android:rating="0" />
+
+                    <TextView
+                        android:id="@+id/date_reviewed_program_info"
+                        android:layout_toEndOf="@id/user_rating_program_info"
+                        android:layout_below="@id/review_by_txt_program_info"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="2020/11/20" />
+
+                    <TextView
+                        android:id="@+id/reviewed_desc_program_info"
+                        android:layout_below="@id/user_rating_program_info"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="WWWWWWWWWWWWWWWWWWWWW" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/no_reviews_text_program_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No reviews yet"
+                    android:textColor="@color/almostBlck"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/see_more_reviews_program_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    android:layout_gravity="end"
+                    android:text="@string/see_more"
+                    android:fontFamily="@font/muli_semibold"
+                    android:background="@color/btnpressed"
+                    android:textColor="@color/grey" />
+
+                <Button
+                    android:id="@+id/add_a_review_btn_program_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Add a Review"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:background="@drawable/button_design_two" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

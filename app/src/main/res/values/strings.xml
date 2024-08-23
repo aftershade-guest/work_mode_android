@@ -1,0 +1,197 @@
+<resources>
+    <string name="app_name">Work Mode</string>
+
+    <!-- SignUpLogin Strings -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="full_name">Full name</string>
+    <string name="password">Password</string>
+    <string name="login_instead">Login Instead</string>
+    <string name="next">Next</string>
+    <string name="email">Email</string>
+
+
+    <string name="title_activity_bottom_nav">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- AppBar Strings -->
+    <string name="chats">Chats</string>
+    <string name="search">Search</string>
+    <string name="trainers">Trainers</string>
+    <string name="profile">Profile</string>
+    <string name="my_activity">MY ACTIVITY</string>
+
+    <!-- Home Activity Tab Strings -->
+    <string name="daily">Daily</string>
+    <string name="weekly">Weekly</string>
+    <string name="monthly">Monthly</string>
+
+    <!--SignUp Strings -->
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="other">Other</string>
+    <string name="choose_gender">Choose Gender</string>
+    <string name="select_your_age">Select your age</string>
+    <string name="cancel_registration">Cancel Registration</string>
+    <string name="please_make_sure_you_can_receive_text_messages_before_clicking_next">Please make sure you can receive text messages before clicking next.</string>
+    <string name="verify_phone">VERIFY\nPHONE</string>
+    <string name="otp_desc">Please the enter one time pin you\'ll receive on your device</string>
+    <string name="verify">Verify</string>
+
+    <string name="data_privacy_desc">You are in control of your own data. \nYou can choose to not have your personal data collected.</string>
+
+    <!-- Onboarding Strings -->
+    <string name="get_fit">GET_FIT</string>
+    <string name="skip">Skip</string>
+    <string name="lets_get_started">Get Started</string>
+    <string name="first_slide_title">Welcome to the App</string>
+    <string name="first_slide_desc">Lets take a look at some of the features of the app.</string>
+    <string name="second_slide_title">Find Instructors</string>
+    <string name="second_slide_desc">Search and find professional from our range of instructors.</string>
+    <string name="third_slide_title">Track your progress</string>
+    <string name="third_slide_desc">Track your progress with your daily, weekly, or montly goals</string>
+    <string name="fourth_slide_title">Share your progress</string>
+    <string name="fourth_slide_desc">You can share your progress with your instructor and your friends</string>
+    <string name="fifth_slide_title">Sit back and get fit</string>
+    <string name="fifth_slide_desc">Huh its over already. Well then enjoy.</string>
+
+    <!-- privacy policy desc -->
+    <string name="privacy_policy_splash">
+
+        We believe you deserve the best experience here on accommodate. \n\n
+
+        That\'s why we and our third party partner sites share and collect data use on this app for application function, tracking, analytics, and personalized advertising both on and off accommodate.\n\n
+
+        If that\'s fine for you, confirm your consent by tapping \"Accept All\" below or tap \"Decline\" if you don\'t wish to share your information.
+
+        \n\n****You can always change this in \"Settings\" under \"Manage data privacy\".
+
+    </string>
+
+    <!-- Save Account Info Strings -->
+    <string name="save_login_tip">You can also enable/disable this on the login screen.</string>
+    <string name="save_login_desc">We\'ll remember your account information for you on this device. You won\'t have to enter it again when you login.</string>
+    <string name="save_login_information">Save login information</string>
+
+
+    <!-- SignUp Login Strings -->
+    <string name="current_info_txt">Please enter your current login information</string>
+    <string name="new_email">New Email</string>
+    <string name="provide_email_err">Please provide an email.</string>
+    <string name="email_not_match">Please verify that email provided is in correct format.</string>
+    <string name="match_confirm_password_err">Please provide a password matching the one above</string>
+    <string name="password_empty_err">Please provide a password</string>
+    <string name="password_match_err">Please provide a password matching the requirements</string>
+
+    <!-- Help Strings -->
+    <string name="experience_txt">How would you rate your experience using the get_fit app?</string>
+    <string name="improve_text">Please tell us how we can improve the app.</string>
+    <string name="your_comment">Your comment</string>
+    <string name="submit_txt_btn">Submit</string>
+    <string name="report_a_problem">Report a Problem</string>
+    <string name="faq_amp_feedback"><![CDATA[FAQ & Feedback]]></string>
+    <string name="privacy_and_securiy_help">Privacy and Securiy Help</string>
+
+    <!-- Profile Info Strings -->
+    <string name="bio">Bio</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="gender">Gender</string>
+    <string name="save_changes">Save Changes</string>
+
+    <!-- Images Alert Strings -->
+    <string name="view_cover">View Cover</string>
+    <string name="modify_cover">Upload/Change Cover Image</string>
+    <string name="remove_cover">Remove Cover</string>
+    <string name="view_profile">View Profile Image</string>
+    <string name="modify_profile">Upload/Change Profile Image</string>
+    <string name="remove_prof">Remove Image</string>
+
+    <!-- Account Sett Strings -->
+    <string name="personal_information">Personal Information</string>
+    <string name="language">Language</string>
+    <string name="change_email">Change Email</string>
+    <string name="change_phone">Change Phone</string>
+    <string name="delete_account">Delete Account</string>
+
+    <string name="about">About</string>
+    <string name="contact_me">Contact Me</string>
+
+    <!-- ActionBar Strings -->
+    <string name="search_">Search</string>
+    <string name="getfit_">GET FIT</string>
+    <string name="my_activity_">MY ACTIVITY</string>
+    <string name="chats_">CHATS</string>
+    <string name="help_">Help</string>
+    <string name="profile_">Profile</string>
+    <string name="settings_">Settings</string>
+    <string name="password_">Password</string>
+    <string name="remember_me_">Remember Me</string>
+    <string name="securuty_">Security</string>
+    <string name="two_factor_">Two-Factor Auth</string>
+    <string name="faq_feedback_">FAQ Feedback</string>
+    <string name="report_problem_">Report a Problem</string>
+    <string name="account_">Account</string>
+    <string name="app_info_">AppInfo</string>
+
+    <!-- Request Permission-->
+    <string name="upload_pic_msg">To upload pictures. Allow GET_FIT to access to storage</string>
+
+    <string name="continue_st">Continue</string>
+    <string name="not_now_st">Not Now</string>
+    <string name="current_email_txt">Enter current email</string>
+    <string name="forgot_password_desc">Please enter the email address you are currently using for your account</string>
+    <string name="view_profile_txt">View Profile</string>
+    <string name="mute_notifications">Mute notifications</string>
+    <string name="report">Report</string>
+    <string name="block">Block</string>
+    <string name="clear_chat">Clear Chat</string>
+
+    <string name="password_specs">Password should have: \n\t\tat least 6 characters\n\t\tat least 1 special character\n\t\tno white spaces \n\t\tany letter</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="no_internet_str">No Internet connection. Make sure that Wi-Fi or mobile data is turned on.</string>
+    <string name="dont_repeat">Don\'t repeat</string>
+    <string name="evry_day">Every day</string>
+    <string name="every_week">Every week</string>
+    <string name="every_month">Every month</string>
+    <string name="update">Update</string>
+    <string name="chats_button">Chats Button</string>
+    <string name="programs">Programs</string>
+    <string name="posts">Posts</string>
+    <string name="phone">Phone:</string>
+    <string name="trainer_cover_photo">Trainer Cover Photo</string>
+    <string name="options_button">Options Button</string>
+    <string name="back_button">Back button</string>
+    <string name="today">Today</string>
+    <string name="online">Online</string>
+    <string name="offline">Offline</string>
+    <string name="see_more">See More</string>
+    <string name="ratings_and_reviews">Ratings and Reviews</string>
+    <string name="submit_review">Submit Review</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="favorites">Favorites</string>
+    <string name="manage_data_privacy">Manage Data Privacy</string>
+    <string name="i_want_this">I want this</string>
+    <string name="ad_attribution">Ad</string>
+
+    <!-- toggle button an arrau strings -->
+    <string name="strength_training">Strength Training</string>
+    <string name="yoga">Yoga</string>
+    <string name="exercises">Exercises</string>
+    <string name="functional_training">Functional training</string>
+    <string name="circuit_training">Circuit training</string>
+    <string name="aerobics">Aerobics</string>
+    <string name="anaerobic_training">Anaerobic training</string>
+    <string name="calisthenics">Calisthenics</string>
+    <string name="strength">Strength</string>
+    <string name="functional">Functional</string>
+    <string name="circuit">Circuit</string>
+    <string name="anaerobics">Anaerobics</string>
+    <string name="add_chat_button">Add Chat Button</string>
+
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_fill_one"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".Common.LoginSignUp.SignUp2ndFragment">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_gender"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="start"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/signup_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/black"
+            android:textColor="@color/black"
+            android:text="@string/male" />
+
+        <RadioButton
+            android:id="@+id/signup_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:buttonTint="@color/black"
+            android:text="@string/female" />
+
+        <RadioButton
+            android:id="@+id/signup_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:buttonTint="@color/black"
+            android:text="@string/other" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_your_age"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <DatePicker
+        android:id="@+id/signup_age_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/datePicker"
+        android:datePickerMode="spinner"
+        android:calendarTextColor="@color/pink"
+        android:backgroundTint="@color/pink"
+        android:calendarViewShown="false"
+        android:spinnersShown="true" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signup_next_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:elevation="8dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_bg_btn"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/signup2nd_login_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel_registration"
+        android:padding="20dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"/>
+
+</LinearLayout>

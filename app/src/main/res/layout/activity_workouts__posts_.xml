@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".users.Workouts_Posts_Activity"
+    android:orientation="vertical"
+    android:background="@color/bg_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageButton
+            android:id="@+id/back_btn_workout_posts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@color/btnpressed"
+            android:src="@drawable/back_icon"
+            app:tint="@color/black" />
+
+        <TextView
+            android:id="@+id/title_workout_posts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/back_btn_workout_posts"
+            android:defaultFocusHighlightEnabled="true"
+            android:ellipsize="marquee"
+            android:fontFamily="@font/muli_black"
+            android:paddingVertical="7dp"
+            android:singleLine="true"
+            android:layout_centerVertical="true"
+            android:text="GET_FIT"
+            android:textColor="@color/orange"
+            android:textSize="22sp" />
+
+        <ImageButton
+            android:id="@+id/options_workout_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/btnpressed"
+            android:src="@drawable/options_icon"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:padding="15dp"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/workout_posts_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

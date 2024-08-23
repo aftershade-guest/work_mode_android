@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".users.settings.Help.FAQFeedbackFragment"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/experience_txt"
+            android:textColor="@color/black"
+            android:fontFamily="@font/muli" />
+
+        <RatingBar
+            android:id="@+id/rating_bar_app_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:numStars="5"
+            android:progressTint="@color/pink"
+            style="@style/Widget.AppCompat.RatingBar"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="@string/improve_text"
+            android:textColor="@color/black"
+            android:fontFamily="@font/muli" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/app_feed_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:hint="@string/your_comment"
+            style="@style/Widget.MaterialComponents.TextView"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/submit_feedback_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_design_two_pressed"
+            android:text="@string/submit_txt_btn"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</ScrollView>

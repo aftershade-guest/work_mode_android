@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".users.AllProgramsActivity"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/top_bar_layout_all_programs"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/back_btn_all_programs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@color/btnpressed"
+            android:src="@drawable/back_icon"
+            app:tint="@color/black" />
+
+        <TextView
+            android:id="@+id/title_workout_posts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@id/back_btn_all_programs"
+            android:defaultFocusHighlightEnabled="true"
+            android:ellipsize="marquee"
+            android:fontFamily="@font/muli_black"
+            android:paddingVertical="7dp"
+            android:singleLine="true"
+            android:layout_centerVertical="true"
+            android:text="WORKOUTS"
+            android:textColor="@color/orange"
+            android:textSize="22sp" />
+
+        <ImageButton
+            android:id="@+id/all_programs_search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/search_icon"
+            android:background="@color/btnpressed"
+            android:padding="15dp"
+            android:tint="@color/almostBlck"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categories"
+                android:textSize="20sp"
+                android:visibility="visible"
+                android:textColor="@color/black"
+                android:layout_marginBottom="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:paddingHorizontal="20dp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+                        android:id="@+id/categories_toggle_group_all_programs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.nex3z.togglebuttongroup.button.LabelToggle
+                            android:id="@+id/all_programs_all_toggle_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="All"
+                            app:tbgRadioStyle="true"
+                            app:tbgMarkerColor="@color/pink" />
+
+                        <com.nex3z.togglebuttongroup.button.LabelToggle
+                            android:id="@+id/all_programs_aerobic_toggle_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/aerobics"
+                            app:tbgRadioStyle="true"
+                            android:layout_marginStart="10dp"
+                            app:tbgMarkerColor="@color/pink" />
+
+                        <com.nex3z.togglebuttongroup.button.LabelToggle
+                            android:id="@+id/all_programs_anaerobic_toggle_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/anaerobics"
+                            app:tbgRadioStyle="true"
+                            android:layout_marginStart="10dp"
+                            app:tbgMarkerColor="@color/pink" />
+
+                        <com.nex3z.togglebuttongroup.button.LabelToggle
+                            android:id="@+id/all_programs_calisthenics_toggle_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/calisthenics"
+                            app:tbgRadioStyle="true"
+                            android:layout_marginStart="10dp"
+                            app:tbgMarkerColor="@color/pink" />
+
+                        <com.nex3z.togglebuttongroup.button.LabelToggle
+                            android:id="@+id/all_programs_circuit_toggle_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/circuit"
+                            app:tbgRadioStyle="true"
+                            android:layout_marginStart="10dp"
+                            app:tbgMarkerColor="@color/pink" />
+
+                        <com.nex3z.togglebuttongroup.button.LabelToggle
+                            android:id="@+id/all_programs_exercises_toggle_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/exercises"
+                            app:tbgRadioStyle="true"
+                            android:layout_marginStart="10dp"
+                            app:tbgMarkerColor="@color/pink" />
+
+                        <com.nex3z.togglebuttongroup.button.LabelToggle
+                            android:id="@+id/all_programs_functional_toggle_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/functional"
+                            app:tbgRadioStyle="true"
+                            android:layout_marginStart="10dp"
+                            app:tbgMarkerColor="@color/pink" />
+
+                        <com.nex3z.togglebuttongroup.button.LabelToggle
+                            android:id="@+id/all_programs_strength_toggle_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/strength"
+                            app:tbgRadioStyle="true"
+                            android:layout_marginStart="10dp"
+                            app:tbgMarkerColor="@color/pink" />
+
+                        <com.nex3z.togglebuttongroup.button.LabelToggle
+                            android:id="@+id/all_programs_yoga_toggle_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/yoga"
+                            app:tbgRadioStyle="true"
+                            android:layout_marginStart="10dp"
+                            app:tbgMarkerColor="@color/pink" />
+
+                    </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Featured Trainers"
+                android:padding="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/all_programs_featured_trainers_recycler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:layout_marginBottom="20dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/all_programs_recycler"
+                android:layout_marginTop="15dp"
+                android:paddingVertical="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

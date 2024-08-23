@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/day_number_schedule_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:fontFamily="@font/muli_black"
+        android:textColor="@color/pink"
+        android:text="Day 0" />
+
+    <TextView
+        android:id="@+id/description_schedule_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kjsbdadn kmdkasndjbsa ndksnd kndksndj ankasnd n kndnakn"
+        android:textSize="14sp"
+        android:textColor="@color/black" />
+
+</LinearLayout>

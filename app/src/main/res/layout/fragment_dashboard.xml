@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".users.ui.chats.ChatsFragment"
+    android:background="@color/bg_color">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chats_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/chats_add_chat_fb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/edit_icon"
+        app:backgroundTint="@color/orange"
+        android:tint="@color/white"
+        android:layout_margin="30dp"
+        android:contentDescription="@string/add_chat_button"
+        android:layout_alignParentEnd="true"
+        />
+
+</RelativeLayout>

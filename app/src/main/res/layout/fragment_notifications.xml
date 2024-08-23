@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".users.ui.profile.ProfileFragment"
+    android:id="@+id/profile_settings_container"
+    android:background="@color/bg_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/profile_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="15dp">
+
+                <ImageView
+                    android:id="@+id/user_cover_image_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:src="@drawable/image_placeholder_icon"
+                    android:scaleType="centerCrop" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user_profile_image_settings"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/image_placeholder_icon"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="250dp"
+                    android:layout_marginStart="30dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/user_cover_image_settings"
+                    android:layout_toEndOf="@id/user_profile_image_settings"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/user_fullname_settings"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sam Chae"
+                        android:textColor="@color/black"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/muli_semibold"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/user_email_settings"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:text="email@example.com" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/editProfileBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/user_profile_image_settings"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_stroke_design_pressed"
+                    android:text="@string/edit_profile"
+                    android:textAllCaps="false" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/settings_layout_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="20dp"
+                android:background="@color/white"
+                android:layout_below="@id/profile_layout">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:divider="@color/black"
+                    android:showDividers="middle">
+
+
+                    <TextView
+                        android:id="@+id/invite_friends_sett_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/invite_friends"
+                        android:textSize="18sp"
+                        android:background="@color/btnpressed"
+                        android:padding="10dp"
+                        android:fontFamily="@font/muli"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/favorites_sett_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/favorites"
+                        android:background="@color/btnpressed"
+                        android:textSize="18sp"
+                        android:padding="10dp"
+                        android:fontFamily="@font/muli"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/activities_sett_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Activities"
+                        android:background="@color/btnpressed"
+                        android:textSize="18sp"
+                        android:padding="10dp"
+                        android:fontFamily="@font/muli"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/manage_data_privacy_sett_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/manage_data_privacy"
+                        android:textSize="18sp"
+                        android:padding="10dp"
+                        android:background="@color/btnpressed"
+                        android:fontFamily="@font/muli"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="20dp"
+                android:background="@color/white"
+                android:layout_below="@id/settings_layout_one">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:divider="@color/black"
+                    android:showDividers="middle">
+
+                    <TextView
+                        android:id="@+id/notification_sett_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Notifications"
+                        android:background="@color/btnpressed"
+                        android:textSize="18sp"
+                        android:padding="10dp"
+                        android:fontFamily="@font/muli"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/privacy_policy_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Privacy Policy"
+                        android:textSize="18sp"
+                        android:background="@color/btnpressed"
+                        android:padding="10dp"
+                        android:fontFamily="@font/muli"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/faq_feedback_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="FAQ &amp; Feedback"
+                        android:textSize="18sp"
+                        android:background="@color/btnpressed"
+                        android:padding="10dp"
+                        android:fontFamily="@font/muli"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/app_info_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="App Info"
+                        android:textSize="18sp"
+                        android:background="@color/btnpressed"
+                        android:padding="10dp"
+                        android:fontFamily="@font/muli"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/settings_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Settings"
+                        android:textSize="18sp"
+                        android:background="@color/btnpressed"
+                        android:padding="10dp"
+                        android:fontFamily="@font/muli"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

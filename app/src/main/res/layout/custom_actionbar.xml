@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/action_bar_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_icon"
+        android:layout_centerVertical="true"
+        android:background="@color/btnpressed"
+        android:visibility="gone"
+        app:tint="@color/almostBlck"
+        android:padding="12dp"/>
+    <TextView
+        android:id="@+id/actionBarText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toEndOf="@id/action_bar_back"
+        android:ellipsize="marquee"
+        android:fontFamily="@font/muli_black"
+        android:paddingVertical="7dp"
+        android:singleLine="true"
+        android:layout_centerVertical="true"
+        android:text="GET_FIT"
+        android:textColor="@color/orange"
+        android:textSize="22sp" />
+
+</RelativeLayout>

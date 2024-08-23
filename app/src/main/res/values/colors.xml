@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="orange">#d8930d</color>
+    <color name="pink">#e5184b</color>
+    <color name="dark_orange">#bb6020</color>
+    <color name="light_pink">#fa4270</color>
+    <color name="bg_color">#ffeef2</color>
+    <color name="lighter_light_pink">#ff7598</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="trans_pink">#12A32948</color>
+    <color name="trans_pink__">#2DA32948</color>
+
+    <!-- other Colors -->
+    <color name="almostGray">#E6E6E6</color>
+    <color name="almostBlck">#252525</color>
+    <color name="blackish">#0E0E0E</color>
+    <color name="whitish">#FDFDFD</color>
+    <color name="grey">#9F9F9F</color>
+
+    <!-- error color -->
+    <color name="error">#FF0000</color>
+
+    <!-- transparent -->
+    <color name="transparent">#00FF0000</color>
+    <color name="button_grey">#BDBDBD</color>
+</resources>
